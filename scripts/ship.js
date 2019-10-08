@@ -1,7 +1,7 @@
 // noinspection UnterminatedStatementJS
 
 function Ship() {
-    var pos = createVector(100, 100);
+    var pos = createVector(windowWidth/2, windowHeight/2);
     var vel = createVector(0, 0);
     var acc = createVector(0, 0);
     var angle = 0;
