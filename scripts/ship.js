@@ -87,6 +87,10 @@ function Ship() {
     }
 
     this.getCenter = function () {
-        return pos;
+        return pos.copy();
+    }
+
+    this.getAngle = function () {
+        return angle;
     }
 }
