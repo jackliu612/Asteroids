@@ -9,12 +9,16 @@ function Bullet(p, v) {
     this.show = function () {
         push();
         stroke(255);
-        strokeWeight(10);
+        strokeWeight(5);
         ellipse(pos.x, pos.y, 5, 5);
         pop();
     }
 
     this.isOnScreen = function () {
         return (pos.x > 0 && pos.x < windowWidth && pos.y > 0 && pos.y < windowWidth);
+    }
+
+    this.getPos = function() {
+        return pos.copy();
     }
 }

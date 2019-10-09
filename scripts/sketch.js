@@ -7,7 +7,7 @@ function setup() {
     canvas = createCanvas(windowWidth, windowHeight);
     ship = new Ship();
     for (var i = 0; i < 10; i++) {
-        asteroids.push(new Asteroid());
+        asteroids.push(new Asteroid(Math.ceil(Math.random() * 3)));
     }
     background(51);
 }
@@ -15,13 +15,36 @@ function setup() {
 function draw() {
     background(51);
     ship.update();
+
+    var tempA = [];
+    var isHit = false;
     asteroids.forEach(function (a) {
-        a.update();
-        if (a.getPos().dist(ship.getCenter()) < 50) {
-            ship = new Ship();
+        isHit = false;
+        var tempB = [];
+        bullets.forEach(function (b) {
+            if (a.getPos().dist(b.getPos()) < a.getSize()*25) {
+                isHit = true;
+            } else{
+                tempB.push(b);
+            }
+        });
+        bullets = tempB;
+
+        if (!isHit) {
+            a.update();
+            if (a.getPos().dist(ship.getCenter()) < 25 + 25 * a.getSize()) {
+                ship = new Ship();
+                bullets = [];
+                tempA = [];
+                for (var i = 0; i < 10; i++) {
+                    tempA.push(new Asteroid(Math.ceil(Math.random() * 3)));
+                }
+            }
+            a.show();
+            tempA.push(a);
         }
-        a.show();
     });
+    asteroids = tempA;
 
     var temp = [];
     bullets.forEach(function (b) {

@@ -1,6 +1,7 @@
-function Asteroid() {
+function Asteroid(s) {
     var pos = createVector(500, 500);
     var vel = createVector(random() * 2 + 1.5, 0).rotate(random() * Math.PI * 2);
+    var size = s;
 
     this.update = function () {
         pos.add(vel);
@@ -28,11 +29,15 @@ function Asteroid() {
         strokeWeight(1);
         noFill();
         translate(pos.x, pos.y);
-        ellipse(0, 0, 50, 50);
+        ellipse(0, 0, 50*size, 50*size);
         pop();
     }
 
     this.getPos = function () {
         return pos;
+    }
+
+    this.getSize = function() {
+        return size;
     }
 }
