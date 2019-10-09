@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ed2747ad-5271-41ad-a6d4-7a2cc47c3b81" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/scripts/ship.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/ship.js" afterDir="false" />
+    <list default="true" id="ed2747ad-5271-41ad-a6d4-7a2cc47c3b81" name="Default Changelist" comment="Added icon">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -30,8 +31,11 @@
     <auto-save>true</auto-save>
   </component>
   <component name="ProjectId" id="1Rg1ZEp0NygyMxDQhgT42SfFf27" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
@@ -72,8 +76,16 @@
       <workItem from="1570160934265" duration="2960000" />
       <workItem from="1570197727217" duration="3316000" />
       <workItem from="1570329919103" duration="9326000" />
-      <workItem from="1570456123181" duration="4236000" />
+      <workItem from="1570456123181" duration="5607000" />
     </task>
+    <task id="LOCAL-00001" summary="Added icon">
+      <created>1570577907019</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1570577907020</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -89,5 +101,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Added icon" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added icon" />
   </component>
 </project>
