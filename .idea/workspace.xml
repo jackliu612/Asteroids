@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="ed2747ad-5271-41ad-a6d4-7a2cc47c3b81" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scripts/asteroid.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/asteroid.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scripts/bullet.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/bullet.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scripts/sketch.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/sketch.js" afterDir="false" />
@@ -41,7 +42,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../In-Class Activities" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Global Libraries" />
@@ -79,7 +80,9 @@
       <workItem from="1570197727217" duration="3316000" />
       <workItem from="1570329919103" duration="9326000" />
       <workItem from="1570456123181" duration="6895000" />
-      <workItem from="1570629706689" duration="3728000" />
+      <workItem from="1570629706689" duration="3889000" />
+      <workItem from="1570634412143" duration="2022000" />
+      <workItem from="1570732375585" duration="1543000" />
     </task>
     <task id="LOCAL-00001" summary="Added icon">
       <created>1570577907019</created>
@@ -102,7 +105,14 @@
       <option name="project" value="LOCAL" />
       <updated>1570631759141</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Added random asteroid sizes and bullet interactions">
+      <created>1570634063053</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1570634063053</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -125,6 +135,7 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Added icon" />
     <MESSAGE value="Added bullet class to project. Only 3 bullets at a time may be fired. They do not yet interact with asteroids." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added bullet class to project. Only 3 bullets at a time may be fired. They do not yet interact with asteroids." />
+    <MESSAGE value="Added random asteroid sizes and bullet interactions" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added random asteroid sizes and bullet interactions" />
   </component>
 </project>

@@ -21,4 +21,8 @@ function Bullet(p, v) {
     this.getPos = function() {
         return pos.copy();
     }
+
+    this.getVelocity = function () {
+        return vel.copy();
+    }
 }

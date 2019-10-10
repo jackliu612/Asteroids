@@ -1,5 +1,17 @@
 function Asteroid(s) {
-    var pos = createVector(500, 500);
+    var r = random();
+    var pos;
+    if (r < .25) {
+        pos = createVector(0, random() * windowHeight);
+    } else if (r < .5) {
+        pos = createVector(windowWidth, random() * windowHeight);
+    } else if (r < .75) {
+        pos = createVector(random() * windowWidth, 0);
+    } else {
+        pos = createVector(random() * windowWidth, windowHeight);
+    }
+
+
     var vel = createVector(random() * 2 + 1.5, 0).rotate(random() * Math.PI * 2);
     var size = s;
 
@@ -29,15 +41,26 @@ function Asteroid(s) {
         strokeWeight(1);
         noFill();
         translate(pos.x, pos.y);
-        ellipse(0, 0, 50*size, 50*size);
+        ellipse(0, 0, 50 * size, 50 * size);
         pop();
     }
 
-    this.getPos = function () {
-        return pos;
+    this.getPosition = function () {
+        return pos.copy();
     }
 
-    this.getSize = function() {
+    this.getVelocity = function () {
+        return vel.copy();
+    }
+
+    this.getSize = function () {
         return size;
+    }
+
+    this.setPosition = function (p) {
+        pos = p.copy();
+    }
+    this.setVelocity = function (v) {
+        vel = v.copy();
     }
 }
