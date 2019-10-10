@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="ed2747ad-5271-41ad-a6d4-7a2cc47c3b81" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/asteroid.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/asteroid.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scripts/bullet.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/bullet.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scripts/sketch.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/sketch.js" afterDir="false" />
     </list>
@@ -82,7 +80,7 @@
       <workItem from="1570456123181" duration="6895000" />
       <workItem from="1570629706689" duration="3889000" />
       <workItem from="1570634412143" duration="2022000" />
-      <workItem from="1570732375585" duration="1543000" />
+      <workItem from="1570732375585" duration="4374000" />
     </task>
     <task id="LOCAL-00001" summary="Added icon">
       <created>1570577907019</created>
@@ -112,7 +110,14 @@
       <option name="project" value="LOCAL" />
       <updated>1570634063053</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Added asteroid splitting mechanic and made each new asteroid start on the edge of the screen.">
+      <created>1570734046478</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1570734046478</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -136,6 +141,7 @@
     <MESSAGE value="Added icon" />
     <MESSAGE value="Added bullet class to project. Only 3 bullets at a time may be fired. They do not yet interact with asteroids." />
     <MESSAGE value="Added random asteroid sizes and bullet interactions" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added random asteroid sizes and bullet interactions" />
+    <MESSAGE value="Added asteroid splitting mechanic and made each new asteroid start on the edge of the screen." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added asteroid splitting mechanic and made each new asteroid start on the edge of the screen." />
   </component>
 </project>

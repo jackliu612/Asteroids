@@ -2,6 +2,7 @@ var ship;
 var canvas;
 var asteroids = [];
 var bullets = [];
+var score = 0;
 
 function setup() {
     canvas = createCanvas(windowWidth, windowHeight);
@@ -13,6 +14,7 @@ function setup() {
 }
 
 function draw() {
+    score++;
     background(51);
     ship.update();
 
@@ -50,6 +52,10 @@ function draw() {
             tempA.push(newA1);
             tempA.push(newA2);
         }
+
+        if(isHit){
+            score+=100*a.getSize();
+        }
     });
     if (reset) {
         ship = new Ship();
@@ -58,6 +64,7 @@ function draw() {
         for (var i = 0; i < 10; i++) {
             tempA.push(new Asteroid(Math.ceil(Math.random() * 3)));
         }
+        score = 0;
     }
     asteroids = tempA;
 
@@ -72,15 +79,14 @@ function draw() {
     bullets = temp;
 
     ship.show();
-    /*ship.getPoints().forEach(function (p) {
-        ellipse(p.x, p.y, 10, 10);
-    });*/
+    showScore();
 }
 
 function keyPressed() {
     if (keyCode === 8) {
         background(51);
         ship = new Ship();
+        score = 0;
     }
 
     if (keyCode === 32) {
@@ -92,4 +98,17 @@ function keyPressed() {
 
 function windowResized() {
     resizeCanvas(windowWidth, windowHeight);
+}
+
+function showScore(){
+    push();
+    // fill(51);
+    // stroke(255);
+    // strokeWeight(2);
+    // rect(15,15, 200, 65);
+    stroke(255);
+    fill(255)
+    textSize(32);
+    text('Score: ' + score, 25, 45);
+    pop();
 }

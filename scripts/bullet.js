@@ -9,6 +9,10 @@ function Bullet(p, v) {
     this.show = function () {
         push();
         stroke(255);
+        /**
+         * Victor is dumb
+         */
+        //stroke(255*random(),255*random(),255*random());
         strokeWeight(5);
         ellipse(pos.x, pos.y, 5, 5);
         pop();
