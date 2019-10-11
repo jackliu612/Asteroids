@@ -1,33 +1,24 @@
 // noinspection UnterminatedStatementJS
 
 function Ship() {
-    var pos = createVector(windowWidth/2, windowHeight/2);
+    var pos = createVector(windowWidth / 2, windowHeight / 2);
     var vel = createVector(0, 0);
     var acc = createVector(0, 0);
     var angle = 0;
 
     this.update = function () {
-
-        //Should have all key downs together in one else if
-        //If nothing is pressed, acc = 0 and vel goes down to 0
-        if (keyIsDown(UP_ARROW)) {
-            acc = createVector(0, -0.2).rotate(angle);
+        if (keyIsDown(UP_ARROW) || keyIsDown(87)) {
+            accelerate();
         } else {
-            acc = createVector(0, 0);
-            var mag = vel.mag();
-            if (mag > .03) {
-                vel.limit(mag - .03);
-            } else {
-                vel = createVector(0, 0);
-            }
+            decelerate();
         }
 
-        if (keyIsDown(LEFT_ARROW)) {
-            angle += -0.1;
+        if (keyIsDown(LEFT_ARROW) || keyIsDown(65)) {
+            turnLeft();
         }
 
-        if (keyIsDown(RIGHT_ARROW)) {
-            angle += 0.1;
+        if (keyIsDown(RIGHT_ARROW) || keyIsDown(68)) {
+            turnRight();
         }
 
         vel.limit(8);
@@ -76,6 +67,28 @@ function Ship() {
         triangle(0, 0, 0, -25, 25 / 2 * Math.sqrt(3), 25 / 2);
         triangle(0, 0, 0, -25, -25 / 2 * Math.sqrt(3), 25 / 2);
         pop();
+    }
+
+    function accelerate() {
+        acc = createVector(0, -0.2).rotate(angle);
+    }
+
+    function decelerate() {
+        acc = createVector(0, 0);
+        var mag = vel.mag();
+        if (mag > .03) {
+            vel.limit(mag - .03);
+        } else {
+            vel = createVector(0, 0);
+        }
+    }
+
+    function turnLeft() {
+        angle += -0.1;
+    }
+
+    function turnRight() {
+        angle += 0.1;
     }
 
     this.getPoints = function () {
