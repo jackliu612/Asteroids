@@ -14,7 +14,10 @@ function setup() {
 }
 
 function draw() {
-    score++;
+    var scoreMult = 1;
+    if (keyIsDown(UP_ARROW)) {
+        scoreMult = 2;
+    }
     background(51);
     ship.update();
 
@@ -79,6 +82,7 @@ function draw() {
     bullets = temp;
 
     ship.show();
+    score = score+scoreMult;
     showScore();
 }
 
