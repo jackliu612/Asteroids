@@ -16,8 +16,8 @@ function setup() {
 
 function draw() {
     var scoreMult = 1;
-    if (keyIsDown(UP_ARROW)) {
-        scoreMult = 2;
+    if (ship.isAccelerating()) {
+        scoreMult = 3;
     }
     background(51);
     ship.update();

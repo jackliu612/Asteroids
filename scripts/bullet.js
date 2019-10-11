@@ -19,7 +19,7 @@ function Bullet(p, v) {
     }
 
     this.isOnScreen = function () {
-        return (pos.x > 0 && pos.x < windowWidth && pos.y > 0 && pos.y < windowWidth);
+        return (pos.x > 0 && pos.x < windowWidth && pos.y > 0 && pos.y < windowHeight);
     }
 
     this.getPos = function() {

@@ -99,6 +99,9 @@ function Ship() {
         return p;
     }
 
+    this.isAccelerating = function () {
+        return acc.mag()>0;
+    }
     this.getCenter = function () {
         return pos.copy();
     }
